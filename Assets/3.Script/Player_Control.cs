@@ -10,6 +10,7 @@ public class Player_Control : MonoBehaviour
     
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Transform anchor_transform;
+    [SerializeField] private GameObject player_body;
 
     float input_cursor_h = 0f;
     float input_cursor_v = 0f;
@@ -89,6 +90,7 @@ public class Player_Control : MonoBehaviour
         for(int i = 0; i < ray_hits.Length; i++)
         {
             Debug.Log($"{ray_hits[i].collider.gameObject.name}");
+            
         }
     }
 
