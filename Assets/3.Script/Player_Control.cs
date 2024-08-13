@@ -90,7 +90,10 @@ public class Player_Control : MonoBehaviour
         for(int i = 0; i < ray_hits.Length; i++)
         {
             Debug.Log($"{ray_hits[i].collider.gameObject.name}");
-            
+            if (ray_hits[i].collider.CompareTag("Changeable"))
+            {
+
+            }
         }
     }
 
